@@ -5,8 +5,6 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	
-	
-	
 	<persistence-unit name="pos-java-maven-hibernate">
 	
 	<class>model.UsuarioPessoa</class>
@@ -15,10 +13,10 @@
 	<!--  dados de conexão com o banco -->
 	<property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
 	<property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5434/posjavahibernate"/>
-	<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" ></property>
+	<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 	<property name="hibernate.connection.username" value="postgres"/>
 	<property name="hibernate.connection.password" value="Kleber01@"/>
-	<property name="hibernate.hbm2ddl.auto" value="create"></property> <!-- Especifica o comportamento de atualização do esquema
+	<property name="hibernate.hbm2ddl.auto" value="create" /> <!-- Especifica o comportamento de atualização do esquema
 	 do banco de dados. Neste caso, está configurado para "update", o que significa que o Hibernate tentará 
 	 atualizar automaticamente o esquema do banco de dados com base nas alterações feitas no código. -->
 	
